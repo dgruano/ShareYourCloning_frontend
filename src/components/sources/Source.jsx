@@ -14,13 +14,13 @@ import SourcePCR from './SourcePCR';
 // There are several types of source, this components holds the common part,
 // which for now is a select element to pick which kind of source is created
 function Source({
-  source, updateSource, getEntityFromId, entitiesNotChildSource, deleteSource, inputEntities, primers,
+  source, updateSource, entitiesNotChildSource, deleteSource, inputEntities, primers,
 }) {
   const sourceId = source.id;
   const [sourceType, setSourceType] = React.useState(source.type);
   let specificSource = null;
   switch (sourceType) {
-    /* eslint-disable */
+    /* eslint-disable */ // To have all as one-liners
     case 'file':
       specificSource = <SourceFile {...{ sourceId, updateSource }} />; break;
     case 'repository_id':

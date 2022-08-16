@@ -59,7 +59,7 @@ function buildElementListSources(sources, updateSource, getEntityFromId, entitie
       sourceElement = (
         <div>
           <Source {...{
-            source, updateSource, getEntityFromId, entitiesNotChildSource, deleteSource, inputEntities, primers,
+            source, updateSource, entitiesNotChildSource, deleteSource, inputEntities, primers,
           }}
           />
         </div>
