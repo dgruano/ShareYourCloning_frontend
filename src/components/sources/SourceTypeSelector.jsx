@@ -13,6 +13,7 @@ function SourceTypeSelector({ sourceId, sourceType, setSourceType }) {
         <option value="file">file</option>
         <option value="restriction">Restriction</option>
         <option value="repository_id">Repository ID (GenBank, AddGene)</option>
+        <option value="ensembl">Ensembl</option>
         <option value="sticky_ligation">Ligation with sticky ends</option>
         <option value="PCR">PCR</option>
       </select>
